@@ -1,5 +1,6 @@
 :root {
     --dark-blue: #122E3C;
+    --color-principal: #F03C02;
 }
 
 * {
@@ -31,6 +32,15 @@ a.btn-unstyled {
     cursor: pointer;
 }
 
+.cta,
+button.cta,
+a.cta {
+    border-radius: 40px;
+    border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+    padding: .5rem 1.5rem;
+}
+
 /* Header */
 header>* {
     padding: 0 2rem;
@@ -49,4 +59,8 @@ header nav.menu-contacto ul.navbar-nav li.nav-item::after {
 
 header nav.menu-contacto ul.navbar-nav li.nav-item:last-of-type:after {
     content: unset;
+}
+
+header nav.menu-principal {
+    padding: 1rem 0;
 }
