@@ -63,6 +63,16 @@ a.cta:hover {
     font-weight: 700;
 }
 
+.tituloH2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Bloques */
+.background-gris {
+    background-color: #f6f6f6;
+}
+
 /* Header */
 header>* {
     padding: 0 2rem;
@@ -151,4 +161,11 @@ section.datos .datos_contenedor .datos_item>section .titulo {
 section.datos .datos_contenedor .datos_item>section .descripcion {
     font-size: 20px;
     font-weight: 300;
+}
+
+/* Bloque estándar */
+div.indicador {
+    width: 3px;
+    height: 30px;
+    background-color: var(--color-principal);
 }
