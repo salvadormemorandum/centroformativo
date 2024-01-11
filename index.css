@@ -1,6 +1,7 @@
 :root {
     --dark-blue: #122E3C;
     --color-principal: #F03C02;
+    --color-principal-opacidad-7: rgba(240, 60, 2, 0.7);
     --color-texto: #0A1D35;
 }
 
@@ -62,6 +63,24 @@ a.cta:hover {
     border: 1px solid var(--color-principal);
     color: #fff !important;
     background-color: var(--color-principal);
+}
+
+.btn_categorias,
+.btn-secundario {
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1.5rem;
+    border-radius: 40px;
+    color: var(--color-texto);
+    border: 1px solid var(--color-texto);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn_categorias:hover,
+.btn-secundario:hover {
+    color: #fff;
+    background-color: var(--color-texto);
 }
 
 /* Textos */
@@ -148,12 +167,14 @@ section.datos .datos_contenedor {
     border-radius: 40px;
     background-color: #fff;
     box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
-    width: 80%;
     margin: 0 auto;
-    max-width: fit-content;
     margin-top: -60px;
     z-index: 2;
     position: relative;
+}
+
+section.datos .datos_contenedor .datos_item {
+    width: 33%;
 }
 
 section.datos .datos_contenedor .datos_item::after {
@@ -165,10 +186,6 @@ section.datos .datos_contenedor .datos_item::after {
 
 section.datos .datos_contenedor .datos_item:last-of-type:after {
     content: unset;
-}
-
-section.datos .datos_contenedor .datos_item>section {
-    padding: 0 60px;
 }
 
 section.datos .datos_contenedor .datos_item>section .titulo {
@@ -186,4 +203,46 @@ div.indicador {
     width: 3px;
     height: 30px;
     background-color: var(--color-principal);
+}
+
+/* Bloque listado cursos */
+ul.listado-cursos > li {
+    width: 32%;
+}
+
+ul.listado-cursos article.curso-card {
+    border-radius: 16px 16px 16px 0;
+    width: 100%;
+    height: 290px;
+    background: grey;
+    position: relative;
+    box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
+}
+
+ul.listado-cursos article.curso-card .curso-card_estado {
+    color: #FFF;
+    background-color: var(--color-principal-opacidad-7);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+ul.listado-cursos article.curso-card .curso-card_info {
+    background-color: #fff;
+    height: 35%;
+    width: 80%;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 16px;
+}
+
+ul.listado-cursos article.curso-card .curso-card_info .curso-card_info_caracteristicas {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+ul.listado-cursos article.curso-card .curso-card_info .curso-card_info_nombre {
+    font-size: 16px;
+    font-weight: 700;
 }
