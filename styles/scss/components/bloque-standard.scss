@@ -1,0 +1,54 @@
+/* Bloque estándar */
+.bloque-standard {
+    min-height: 400px;
+
+    & div.indicador {
+        width: 3px;
+        height: 30px;
+        background-color: $color-principal;
+    }
+
+    & .bloque-standard_img-right,
+    & .bloque-standard_img-left,
+    & .img-back {
+        top: 0;
+    }
+
+    & .img-front {
+        transform: translateY(12%);
+    }
+
+    /* Bloque estándar imagen derecha */
+    & .bloque-standard_img-right,
+    & .bloque-standard_img-right .img-back {
+        right: 0;
+    }
+
+    & .bloque-standard_img-right {
+
+        & .img-back {
+            position: absolute;
+            width: 75%;
+            opacity: 0.1;
+        }
+    }
+
+    /* Bloque estándar imagen izquierda */
+    & .bloque-standard_img-left,
+    & .bloque-standard_img-left .img-back {
+        left: 0;
+    }
+
+    & .bloque-standard_img-left {
+
+        & .img-front {
+            border-top-right-radius: 64px;
+        }
+
+        & .img-back {
+            position: absolute;
+            width: 75%;
+            opacity: 0.1;
+        }
+    }
+}

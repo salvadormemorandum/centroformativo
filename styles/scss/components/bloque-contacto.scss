@@ -1,0 +1,17 @@
+/* Contacto */
+.contacto {
+    & .mapa {
+        height: 440px;
+
+        & .mapa_info {
+            width: 45%;
+            height: 65%;
+            bottom: 0;
+            right: 0;
+            background-color: $color-texto-opacidad-8;
+            border-radius: 64px 0 0 0;
+            color: #fff;
+            padding: 50px 60px;
+        }
+    }
+}

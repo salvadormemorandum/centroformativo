@@ -1,0 +1,43 @@
+/* Datos */
+section.datos {
+    height: 200px;
+
+    & .datos_contenedor {
+        border: 1px solid $color-principal;
+        border-radius: 40px;
+        background-color: #fff;
+        box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
+        margin: 0 auto;
+        margin-top: -60px;
+        z-index: 2;
+        position: relative;
+
+        & .datos_item {
+            width: 33%;
+
+            &::after {
+                content: " ";
+                width: 1px;
+                height: 100px;
+                background-color: $color-principal;
+            }
+
+            &:last-of-type::after {
+                content: unset;
+            }
+
+            &>section {
+
+                & .titulo {
+                    font-size: 35px;
+                    font-weight: 700;
+                }
+
+                & .descripcion {
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

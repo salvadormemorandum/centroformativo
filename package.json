@@ -1,0 +1,23 @@
+{
+  "name": "centroformativo",
+  "version": "1.0.0",
+  "description": "## Maquetación estática de la web de centro formativo con HTML, CSS y BOOTSTRAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w styles/scss -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvadormemorandum/centroformativo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salvadormemorandum/centroformativo/issues"
+  },
+  "homepage": "https://github.com/salvadormemorandum/centroformativo#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

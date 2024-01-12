@@ -1,0 +1,28 @@
+/* Header */
+header {
+    &>* {
+        padding: 0 2rem;
+    }
+
+    & nav.menu-contacto {
+        background-color: $dark-blue;
+        color: #fff;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        & ul.navbar-nav li.nav-item {
+
+            &::after {
+                content: "|";
+            }
+
+            &:last-of-type::after {
+                content: unset;
+            }
+        }
+    }
+
+    & nav.menu-principal {
+        padding: 1rem 0;
+    }
+}

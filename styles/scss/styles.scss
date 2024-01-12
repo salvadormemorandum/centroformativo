@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+$dark-blue: #122E3C;
+$color-principal: #F03C02;
+$color-principal-opacidad-7: rgba(240, 60, 2, 0.7);
+$color-texto: #0A1D35;
+$color-texto-opacidad-8: rgba(10, 29, 53, 0.8);
+$color-azul-tag-opacidad-7: rgba(52, 159, 140, 0.7);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    color: $color-texto !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import 'global/layout.scss';
+@import 'global/spaces.scss';
+@import 'global/buttons.scss';
+@import 'global/tipography.scss';
+
+@import 'components/header.scss';
+@import 'components/cabecera.scss';
+@import 'components/bloque-datos.scss';
+@import 'components/bloque-standard.scss';
+@import 'components/bloque-listado-cursos.scss';
+@import 'components/bloque-contacto.scss';
