@@ -9,43 +9,58 @@ a.btn-unstyled {
     cursor: pointer;
 }
 
+/* Mixin button and links*/
+@mixin buttonColor($color: $color-principal) {
+    border: 1px solid $color;
+    color: $color !important;
+
+    &:hover {
+        background-color: $color;
+    }
+}
+
+@mixin colorEnlace($color: $color-texto) {
+    color: $color;
+}
+
+/* Extends buttons and links */
+%basicLinkStyle {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+}
+
+%basicButtonStyles {
+    border-radius: 40px;
+    padding: .5rem 1.5rem;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    background-color: #fff;
+
+    &:hover {
+        color: #fff !important;
+    }
+}
+
 .cta,
 button.cta,
 a.cta {
-    border-radius: 40px;
-    border: 1px solid $color-principal;
-    color: $color-principal !important;
-    padding: .5rem 1.5rem;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-}
+    @extend %basicButtonStyles;
+    @include buttonColor;
 
-.cta:hover,
-button.cta:hover,
-a.cta:hover {
-    border: 1px solid $color-principal;
-    color: #fff !important;
-    background-color: $color-principal;
+    font-weight: 500;
 }
 
 .btn_categorias,
 .btn-secundario {
-    text-decoration: none;
-    text-align: center;
-    padding: .5rem 1.5rem;
-    border-radius: 40px;
-    color: $color-texto;
-    border: 1px solid $color-texto;
-    white-space: nowrap;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn_categorias:hover,
-.btn-secundario:hover {
-    color: #fff;
-    background-color: $color-texto;
+    @extend %basicButtonStyles;
+    @include buttonColor($color: $color-texto);
 }

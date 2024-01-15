@@ -1,0 +1,37 @@
+/* Footer */
+footer.footer {
+
+    & .footer_top {
+        background-color: $dark-blue;
+        color: #fff;
+
+        & h3 {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        & a {
+            @extend %basicLinkStyle;
+            @include colorEnlace(#fff);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        & img.img-sello {
+            height: 40px;
+        }
+    }
+
+    & .footer_bottom {
+
+        & .linea {
+            height: 5px;
+            background-color: $color-principal;
+        }
+
+        & a {
+            @extend %basicLinkStyle;
+            @include colorEnlace;
+        }
+    }
+}

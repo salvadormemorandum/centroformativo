@@ -16,16 +16,24 @@
 .h-80 {
   height: 80%; }
 
+.h-400 {
+  height: 400px; }
+
 /* Bloques */
 .background-gris {
   background-color: #f6f6f6; }
 
 /* Imagen fondo */
-.img-background {
+.img-background-cover-center {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1; }
+
+.img-background-cover-center {
+  top: 0;
+  left: 0;
+  object-fit: cover; }
+
+.img-invertida {
+  transform: scaleX(-1); }

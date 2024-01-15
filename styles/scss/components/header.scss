@@ -1,5 +1,5 @@
 /* Header */
-header {
+header.header {
     &>* {
         padding: 0 2rem;
     }
@@ -24,5 +24,11 @@ header {
 
     & nav.menu-principal {
         padding: 1rem 0;
+
+        & .nav-item.active {
+            & a.nav-link {
+                color: $color-principal !important;
+            }
+        }
     }
 }

@@ -29,22 +29,30 @@ body {
 .h-80 {
   height: 80%; }
 
+.h-400 {
+  height: 400px; }
+
 /* Bloques */
 .background-gris {
   background-color: #f6f6f6; }
 
 /* Imagen fondo */
-.img-background {
+.img-background-cover-center {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1; }
 
+.img-background-cover-center {
+  top: 0;
+  left: 0;
+  object-fit: cover; }
+
+.img-invertida {
+  transform: scaleX(-1); }
+
 /* Espacios */
-.pe-xl-6 {
+.pe-6 {
   padding-right: 4rem !important; }
 
 .ps-6 {
@@ -60,42 +68,50 @@ a.btn-unstyled {
   margin: 0;
   cursor: pointer; }
 
+/* Mixin button and links*/
+/* Extends buttons and links */
+footer.footer .footer_top a, footer.footer .footer_bottom a {
+  text-decoration: none; }
+  footer.footer .footer_top a:hover, footer.footer .footer_bottom a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; }
+
+.cta,
+button.cta,
+a.cta, .btn_categorias,
+.btn-secundario {
+  border-radius: 40px;
+  padding: .5rem 1.5rem;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .2s ease-in-out;
+  text-align: center;
+  background-color: #fff; }
+  .cta:hover, .btn_categorias:hover,
+  .btn-secundario:hover {
+    color: #fff !important; }
+
 .cta,
 button.cta,
 a.cta {
-  border-radius: 40px;
   border: 1px solid #F03C02;
   color: #F03C02 !important;
-  padding: .5rem 1.5rem;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: #fff;
-  font-family: 'Montserrat', sans-serif; }
-
-.cta:hover,
-button.cta:hover,
-a.cta:hover {
-  border: 1px solid #F03C02;
-  color: #fff !important;
-  background-color: #F03C02; }
+  font-weight: 500; }
+  .cta:hover,
+  button.cta:hover,
+  a.cta:hover {
+    background-color: #F03C02; }
 
 .btn_categorias,
 .btn-secundario {
-  text-decoration: none;
-  text-align: center;
-  padding: .5rem 1.5rem;
-  border-radius: 40px;
-  color: #0A1D35;
   border: 1px solid #0A1D35;
-  white-space: nowrap;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif; }
-
-.btn_categorias:hover,
-.btn-secundario:hover {
-  color: #fff;
-  background-color: #0A1D35; }
+  color: #0A1D35 !important; }
+  .btn_categorias:hover,
+  .btn-secundario:hover {
+    background-color: #0A1D35; }
 
 /* Textos */
 .texto-resaltado {
@@ -114,21 +130,23 @@ a.cta:hover {
   font-weight: 400; }
 
 /* Header */
-header > * {
+header.header > * {
   padding: 0 2rem; }
 
-header nav.menu-contacto {
+header.header nav.menu-contacto {
   background-color: #122E3C;
   color: #fff;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
-  header nav.menu-contacto ul.navbar-nav li.nav-item::after {
+  header.header nav.menu-contacto ul.navbar-nav li.nav-item::after {
     content: "|"; }
-  header nav.menu-contacto ul.navbar-nav li.nav-item:last-of-type::after {
+  header.header nav.menu-contacto ul.navbar-nav li.nav-item:last-of-type::after {
     content: unset; }
 
-header nav.menu-principal {
+header.header nav.menu-principal {
   padding: 1rem 0; }
+  header.header nav.menu-principal .nav-item.active a.nav-link {
+    color: #F03C02 !important; }
 
 /* Cabecera */
 section.cabecera {
@@ -137,7 +155,7 @@ section.cabecera {
   section.cabecera .cabecera_info {
     bottom: 0;
     left: 0;
-    width: 50%;
+    width: 45%;
     height: 70%;
     background-color: #fff;
     border-top-right-radius: 40px;
@@ -186,6 +204,8 @@ section.datos {
     width: 3px;
     height: 30px;
     background-color: #F03C02; }
+  .bloque-standard p.text-20 {
+    max-width: 750px; }
   .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-left,
   .bloque-standard .img-back {
@@ -195,6 +215,8 @@ section.datos {
   .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-right .img-back {
     right: 0; }
+  .bloque-standard .bloque-standard_img-right .img-front {
+    border-top-left-radius: 64px; }
   .bloque-standard .bloque-standard_img-right .img-back {
     position: absolute;
     width: 75%;
@@ -247,7 +269,8 @@ ul.listado-cursos > li {
 
 /* Contacto */
 .contacto .mapa {
-  height: 440px; }
+  height: 440px;
+  box-shadow: 0px 4px 51px 0px rgba(0, 0, 0, 0.25); }
   .contacto .mapa .mapa_info {
     width: 45%;
     height: 65%;
@@ -257,3 +280,24 @@ ul.listado-cursos > li {
     border-radius: 64px 0 0 0;
     color: #fff;
     padding: 50px 60px; }
+
+/* Footer */
+footer.footer .footer_top {
+  background-color: #122E3C;
+  color: #fff; }
+  footer.footer .footer_top h3 {
+    font-size: 12px;
+    font-weight: 600; }
+  footer.footer .footer_top a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300; }
+  footer.footer .footer_top img.img-sello {
+    height: 40px; }
+
+footer.footer .footer_bottom .linea {
+  height: 5px;
+  background-color: #F03C02; }
+
+footer.footer .footer_bottom a {
+  color: #0A1D35; }

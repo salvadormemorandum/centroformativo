@@ -8,6 +8,10 @@
         background-color: $color-principal;
     }
 
+    & p.text-20 {
+        max-width: 750px;
+    }
+
     & .bloque-standard_img-right,
     & .bloque-standard_img-left,
     & .img-back {
@@ -25,6 +29,10 @@
     }
 
     & .bloque-standard_img-right {
+
+        & .img-front {
+            border-top-left-radius: 64px;
+        }
 
         & .img-back {
             position: absolute;
