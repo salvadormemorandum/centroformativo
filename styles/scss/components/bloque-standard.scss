@@ -2,12 +2,6 @@
 .bloque-standard {
     min-height: 400px;
 
-    & div.indicador {
-        width: 3px;
-        height: 30px;
-        background-color: $color-principal;
-    }
-
     & p.text-20 {
         max-width: 750px;
     }

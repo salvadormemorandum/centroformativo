@@ -17,6 +17,14 @@
     width: 35%;
 }
 
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
 .h-80 {
     height: 80%;
 }
@@ -28,6 +36,10 @@
 /* Bloques */
 .background-gris {
     background-color: #f6f6f6;
+}
+
+.background-gris-opacidad-5 {
+    background-color: rgba(246, 246, 246, 0.5);
 }
 
 /* Imagen fondo */

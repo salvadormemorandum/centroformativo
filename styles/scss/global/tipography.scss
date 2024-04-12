@@ -4,16 +4,26 @@
 }
 
 .tituloH1 {
-    font-size: 50px;
+    font-size: unquote("clamp(2.1875rem, 1.1161rem + 2.2321vw, 3.125rem)");
     font-weight: 700;
 }
 
 .tituloH2 {
-    font-size: 30px;
+    font-size: unquote("clamp(1.25rem, 0.5357rem + 1.4881vw, 1.875rem);");
     font-weight: 600;
 }
 
 .text-20 {
-    font-size: 20px;
+    font-size: unquote("clamp(0.9375rem, 0.5804rem + 0.744vw, 1.25rem)");
     font-weight: 400;
+}
+
+.text-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-13 {
+    font-size: 13px;
+    font-weight: 500;
 }

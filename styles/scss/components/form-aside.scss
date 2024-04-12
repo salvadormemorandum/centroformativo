@@ -1,0 +1,51 @@
+.formulario-con-aside {
+    & aside {
+        width: 30%;
+    }
+
+    & form {
+        width: 70%;
+
+        & .input-field {
+            & .form-label {
+                color: #6C757D;
+                margin-bottom: .25rem;
+            }
+
+            & .form-control {
+                border-color: $color-texto-secundario;
+                color: $color-texto-secundario;
+
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+
+            & fieldset {
+                height: 38px;
+                align-items: center;
+            }
+        }
+
+        & .conformidad {
+            color: #6C757D;
+
+            & .scroll {
+                max-height: 80px;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: #000 #C9C9C9;
+            }
+        }
+
+        & .btn-borrar {
+            color: $color-texto-secundario !important;
+            border-color: $color-texto-secundario;
+
+            &:hover {
+                background-color: $color-texto-secundario;
+                color: #fff !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.opciones-bolsa-empleo {
+    &.horizontal {
+        & nav {
+            flex-direction: row;
+        }
+    }
+
+    &.vertical {
+        & nav {
+            flex-direction: column;
+        }
+    }
+
+    & nav {
+        justify-content: center;
+        align-items: center;
+
+        & .line-divider {
+            width: 3px;
+            min-height: 100px;
+            background-color: $color-gris;
+            margin-inline: 2rem;
+        }
+
+        & a {
+            width: 250px;
+            aspect-ratio: 1/1;
+        }
+    }
+}
