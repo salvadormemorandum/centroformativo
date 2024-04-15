@@ -8,7 +8,7 @@
 
         & .input-field {
             & .form-label {
-                color: #6C757D;
+                color: $color-texto-terciario;
                 margin-bottom: .25rem;
             }
 
@@ -19,6 +19,21 @@
                 &:focus {
                     box-shadow: unset;
                 }
+
+                &[type="file"]{
+                    border: unset; 
+                    background-color: transparent;
+                    color: $color-texto-terciario;
+                    font-weight: 500;
+
+                    &::-webkit-file-upload-button {
+                        border: 1px solid $color-texto-secundario;
+                        border-radius: 5px;
+                        background-color: #D9D9D9;
+                        padding: 10px 50px;
+                        color: inherit;
+                    }
+                }
             }
 
             & fieldset {
@@ -28,7 +43,7 @@
         }
 
         & .conformidad {
-            color: #6C757D;
+            color: $color-texto-terciario;
 
             & .scroll {
                 max-height: 80px;
@@ -44,7 +59,7 @@
 
             &:hover {
                 background-color: $color-texto-secundario;
-                color: #fff !important;
+                color: $color-blanco !important;
             }
         }
     }

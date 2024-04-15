@@ -1,0 +1,40 @@
+.tabla-con-aside {
+    & aside {
+        width: 30%;
+    }
+
+    & table {
+        width: 70%;
+
+        th {
+            text-align: center;
+            border: 1px solid $color-texto-secundario;
+
+            &:nth-child(1),
+            &:nth-child(4) {
+                width: 15%;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 35%;
+            }
+        }
+
+        thead {
+            background-color: $color-texto;
+            color: $color-blanco;
+
+            th {
+                padding: 10px 20px;
+            }
+        }
+
+        tbody {
+            th {
+                background-color: $color-blanco;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

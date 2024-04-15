@@ -98,10 +98,10 @@ a.cta, .btn_categorias,
   white-space: nowrap;
   transition: all .2s ease-in-out;
   text-align: center;
-  background-color: #fff; }
+  background-color: #FFFFFF; }
   .cta:hover, .btn_categorias:hover,
   .btn-secundario:hover {
-    color: #fff !important; }
+    color: #FFFFFF !important; }
 
 .cta,
 button.cta,
@@ -132,7 +132,7 @@ a.cta {
   border-radius: 20px;
   padding: 1rem 1.5rem;
   gap: 16px;
-  background-color: #fff; }
+  background-color: #FFFFFF; }
   .btn_empleo svg {
     width: 40%;
     height: auto; }
@@ -141,7 +141,7 @@ a.cta {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 45px;
   height: 25px; }
 
 /* Hide default HTML checkbox */
@@ -161,23 +161,23 @@ a.cta {
   background-color: transparent;
   -webkit-transition: .4s;
   transition: .4s;
-  border: 1px solid #6C757D; }
+  border: 1px solid #6c757d; }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 16px;
+  height: 17px;
   width: 16px;
   left: 4px;
-  bottom: 4px;
-  background-color: #6C757D;
+  bottom: 3px;
+  background-color: #6c757d;
   -webkit-transition: .4s;
   transition: .4s; }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
   background-color: #F03C02; }
 
 /* Rounded sliders */
@@ -211,6 +211,12 @@ input:checked + .slider:before {
   font-size: 13px;
   font-weight: 500; }
 
+.color-secundario {
+  color: #263238 !important; }
+
+.color-terciario {
+  color: #6c757d !important; }
+
 div.indicador {
   width: 3px;
   height: 30px;
@@ -231,7 +237,7 @@ header.header > * {
 
 header.header nav.menu-contacto {
   background-color: #122E3C;
-  color: #fff;
+  color: #FFFFFF;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   header.header nav.menu-contacto ul.navbar-nav li.nav-item::after {
@@ -253,7 +259,7 @@ section.cabecera {
     left: 0;
     width: 45%;
     height: 70%;
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-top-right-radius: 40px;
     padding-right: 50px;
     padding-left: 50px;
@@ -269,7 +275,7 @@ section.datos {
   section.datos .datos_contenedor {
     border: 1px solid #F03C02;
     border-radius: 40px;
-    background-color: #fff;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
     margin: 0 auto;
     margin-top: -60px;
@@ -304,6 +310,9 @@ section.datos {
     top: 0; }
   .bloque-standard .img-front {
     transform: translateY(12%); }
+    .bloque-standard .img-front.full-height {
+      transform: translateY(0);
+      height: 100%; }
   .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-right .img-back {
     right: 0; }
@@ -346,7 +355,7 @@ ul.listado-cursos > li {
     ul.listado-cursos > li article.curso-card img.curso-card_bg {
       border-radius: 16px 16px 16px 0; }
     ul.listado-cursos > li article.curso-card .curso-card_estado {
-      color: #FFF;
+      color: #FFFFFF;
       border-radius: 5px;
       padding: .5rem 1rem;
       font-size: 10px;
@@ -356,7 +365,7 @@ ul.listado-cursos > li {
       ul.listado-cursos > li article.curso-card .curso-card_estado.proximo {
         background-color: rgba(52, 159, 140, 0.7); }
     ul.listado-cursos > li article.curso-card .curso-card_info {
-      background-color: #fff;
+      background-color: #FFFFFF;
       height: 35%;
       width: 80%;
       bottom: 0;
@@ -380,7 +389,7 @@ ul.listado-cursos > li {
     right: 0;
     background-color: rgba(10, 29, 53, 0.8);
     border-radius: 64px 0 0 0;
-    color: #fff;
+    color: #FFFFFF;
     padding: 50px 60px; }
 
 .opciones-bolsa-empleo.horizontal nav {
@@ -407,18 +416,29 @@ ul.listado-cursos > li {
 .formulario-con-aside form {
   width: 70%; }
   .formulario-con-aside form .input-field .form-label {
-    color: #6C757D;
+    color: #6c757d;
     margin-bottom: .25rem; }
   .formulario-con-aside form .input-field .form-control {
     border-color: #263238;
     color: #263238; }
     .formulario-con-aside form .input-field .form-control:focus {
       box-shadow: unset; }
+    .formulario-con-aside form .input-field .form-control[type="file"] {
+      border: unset;
+      background-color: transparent;
+      color: #6c757d;
+      font-weight: 500; }
+      .formulario-con-aside form .input-field .form-control[type="file"]::-webkit-file-upload-button {
+        border: 1px solid #263238;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        padding: 10px 50px;
+        color: inherit; }
   .formulario-con-aside form .input-field fieldset {
     height: 38px;
     align-items: center; }
   .formulario-con-aside form .conformidad {
-    color: #6C757D; }
+    color: #6c757d; }
     .formulario-con-aside form .conformidad .scroll {
       max-height: 80px;
       overflow-y: scroll;
@@ -429,17 +449,38 @@ ul.listado-cursos > li {
     border-color: #263238; }
     .formulario-con-aside form .btn-borrar:hover {
       background-color: #263238;
-      color: #fff !important; }
+      color: #FFFFFF !important; }
+
+.tabla-con-aside aside {
+  width: 30%; }
+
+.tabla-con-aside table {
+  width: 70%; }
+  .tabla-con-aside table th {
+    text-align: center;
+    border: 1px solid #263238; }
+    .tabla-con-aside table th:nth-child(1), .tabla-con-aside table th:nth-child(4) {
+      width: 15%; }
+    .tabla-con-aside table th:nth-child(2), .tabla-con-aside table th:nth-child(3) {
+      width: 35%; }
+  .tabla-con-aside table thead {
+    background-color: #0A1D35;
+    color: #FFFFFF; }
+    .tabla-con-aside table thead th {
+      padding: 10px 20px; }
+  .tabla-con-aside table tbody th {
+    background-color: #FFFFFF;
+    padding: 5px 10px; }
 
 /* Footer */
 footer.footer .footer_top {
   background-color: #122E3C;
-  color: #fff; }
+  color: #FFFFFF; }
   footer.footer .footer_top h3 {
     font-size: 12px;
     font-weight: 600; }
   footer.footer .footer_top a {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 300; }
   footer.footer .footer_top img.img-sello {

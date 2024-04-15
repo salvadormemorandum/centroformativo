@@ -16,7 +16,7 @@ ul.listado-cursos {
             }
 
             & .curso-card_estado {
-                color: #FFF;
+                color: $color-blanco;
                 border-radius: 5px;
                 padding: .5rem 1rem;
                 font-size: 10px;
@@ -32,7 +32,7 @@ ul.listado-cursos {
             }
 
             & .curso-card_info {
-                background-color: #fff;
+                background-color: $color-blanco;
                 height: 35%;
                 width: 80%;
                 bottom: 0;

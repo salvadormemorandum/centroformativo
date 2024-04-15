@@ -12,6 +12,9 @@
     top: 0; }
   .bloque-standard .img-front {
     transform: translateY(12%); }
+    .bloque-standard .img-front.full-height {
+      transform: translateY(0);
+      height: 100%; }
   .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-right .img-back {
     right: 0; }

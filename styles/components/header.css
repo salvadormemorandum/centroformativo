@@ -4,7 +4,7 @@ header > * {
 
 header nav.menu-contacto {
   background-color: blue;
-  color: #fff;
+  color: $color-blanco;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   header nav.menu-contacto ul.navbar-nav li.nav-item::after {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Logos - Centro Formativo - Ofertas</title>
+    <title>Logos - Centro Formativo - Darse de alta</title>
 </head>
 
 <body>
@@ -160,52 +160,174 @@
             </section>
         </nav>
     </header>
-    <section class="cabecera mb-5">
+    <section class="cabecera">
         <img src="./public/cabecera-fondo.png" alt="Imagen de fondo de la cabecera"
             class="img-background-cover-center img-invertida">
-        <section class="cabecera_info position-absolute py-4">
-            <h1 class="tituloH1 mb-4">Bolsa de <span class="texto-resaltado">empleo</span></h1>
-            <p class="mb-4 text-20">Este servicio va dirigido tanto a <b>empresas, alumn@s, ex alumn@s, y todos los
-                    candidatos</b> que lo soliciten.</p>
-            <p class="mb-4 text-20"><b>Publicamos ofertas de empleo activas y recientes</b>, y además tienes la
-                posibilidad de <b>enviar tu solicitud</b> y poder acompañarla con el currículum.</p>
-            <p class="mb-4 text-20">Te ofrecemos el <b>asesoramiento</b> necesario, con el fin de aumentar tus
-                posibilidades de <b>encontrar empleo</b>.</p>
+        <section class="cabecera_info position-absolute py-5">
+            <h1 class="tituloH1 mb-5">Ofertas de <span class="texto-resaltado">empleo</span></h1>
+            <header class="d-flex gap-2 align-items-center mb-5">
+                <div class="p-0">
+                    <div class="indicador height-60 p-0"></div>
+                </div>
+                <h2 class="tituloH2 px-1 mb-0">Descubre las mejores <b class="texto-resaltado">ofertas de empleo</b> de tu sector</h2>
+            </header>
+            <p class="mb-4 text-20">empleo@logosformacion.net</p>
         </section>
     </section>
-    <section class="bloque-standard bloque-bg-img py-5">
-        <img class="img-back" src="/public/tecnology-bg.jfif" alt="Imagen de Technology de fondo">
-        <div class="row mx-0 mwidth-1440 px-0 justify-content-center">
-            <div class="col-5 ps-6 pe-0">
-                <header class="d-flex gap-2 align-items-center mb-5">
-                    <div class="p-0">
-                        <div class="indicador p-0"></div>
-                    </div>
-                    <h2 class="tituloH2 px-1 mb-0">Solicitantes</h2>
-                </header>
-                <ul class="ul-list mb-0">
-                    <li class="text-20 m-b-5">Date de alta en nuestra <b>Bolsa de trabajo</b></li>
-                    <li class="text-20 m-b-5"><b>Rellena la información</b> para completar tus datos académicos y
-                        laborales</li>
-                    <li class="text-20"><b>Elige la oferta</b> que más se adapte a tu perfil</li>
-                </ul>
-            </div>
-            <div class="col-5 offset-2 ps-0 pe-6">
-                <header class="d-flex gap-2 align-items-center mb-5">
-                    <div class="p-0">
-                        <div class="indicador p-0"></div>
-                    </div>
-                    <h2 class="tituloH2 px-1 mb-0">Empresas</h2>
-                </header>
-                <ul class="ul-list mb-0">
-                    <li class="text-20">Si su empresa necesita incorporar personal, <b>publicamos sus ofertas</b> y le
-                        ayudamos a encontrar los mejores candidatos</li>
-                </ul>
-            </div>
+    <section class="tabla-con-aside background-gris py-5 mb-5">
+        <div class="ps-6 pe-6 mwidth-1440 d-flex gap-3">
+            <aside class="opciones-bolsa-empleo vertical">
+                <nav class="d-flex gap-4">
+                    <a class="btn_empleo" href="/darse-alta.html">
+                        <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M74.875 59.7656H65.5781V50.4688C65.5781 49.7643 65.2983 49.0886 64.8001 48.5905C64.302 48.0924 63.6264 47.8125 62.9219 47.8125C62.2174 47.8125 61.5418 48.0924 61.0436 48.5905C60.5455 49.0886 60.2656 49.7643 60.2656 50.4688V59.7656H50.9688C50.2643 59.7656 49.5886 60.0455 49.0905 60.5436C48.5924 61.0418 48.3125 61.7174 48.3125 62.4219C48.3125 63.1264 48.5924 63.802 49.0905 64.3001C49.5886 64.7983 50.2643 65.0781 50.9688 65.0781H60.2656V74.375C60.2656 75.0795 60.5455 75.7551 61.0436 76.2533C61.5418 76.7514 62.2174 77.0312 62.9219 77.0312C63.6264 77.0312 64.302 76.7514 64.8001 76.2533C65.2983 75.7551 65.5781 75.0795 65.5781 74.375V65.0781H74.875C75.5795 65.0781 76.2551 64.7983 76.7533 64.3001C77.2514 63.802 77.5312 63.1264 77.5312 62.4219C77.5312 61.7174 77.2514 61.0418 76.7533 60.5436C76.2551 60.0455 75.5795 59.7656 74.875 59.7656Z"
+                                fill="#F03C02" />
+                            <path
+                                d="M43 77.0312H16.4375C15.733 77.0312 15.0574 76.7514 14.5592 76.2532C14.0611 75.7551 13.7812 75.0795 13.7812 74.375C13.7904 66.6285 16.8717 59.2019 22.3493 53.7243C27.8269 48.2467 35.2535 45.1654 43 45.1562C48.134 45.1721 53.1013 43.3345 56.9889 39.9811C60.8766 36.6277 63.4233 31.9839 64.161 26.9031C64.8988 21.8223 63.778 16.6459 61.0047 12.3253C58.2314 8.00472 53.9919 4.83021 49.0654 3.38522C44.1389 1.94022 38.8563 2.32184 34.1886 4.45993C29.521 6.59802 25.7818 10.3489 23.6583 15.0233C21.5347 19.6976 21.1696 24.9813 22.63 29.9033C24.0904 34.8253 27.2781 39.0549 31.6073 41.8147C24.8548 44.1796 19.0026 48.5817 14.8581 54.4138C10.7137 60.2458 8.48119 67.2203 8.46875 74.375C8.46875 76.4884 9.30831 78.5153 10.8027 80.0097C12.2972 81.5042 14.3241 82.3437 16.4375 82.3437H43C43.7045 82.3437 44.3801 82.0639 44.8783 81.5657C45.3764 81.0676 45.6562 80.392 45.6562 79.6875C45.6562 78.983 45.3764 78.3074 44.8783 77.8092C44.3801 77.3111 43.7045 77.0312 43 77.0312ZM27.0625 23.9062C27.0625 20.7541 27.9972 17.6727 29.7485 15.0518C31.4997 12.4309 33.9888 10.3882 36.901 9.18189C39.8132 7.97562 43.0177 7.66001 46.1092 8.27496C49.2008 8.88991 52.0406 10.4078 54.2695 12.6367C56.4984 14.8656 58.0163 17.7054 58.6313 20.797C59.2462 23.8885 58.9306 27.093 57.7243 30.0052C56.5181 32.9174 54.4753 35.4065 51.8544 37.1578C49.2335 38.909 46.1521 39.8437 43 39.8437C38.7744 39.8395 34.7231 38.159 31.7351 35.1711C28.7472 32.1831 27.0667 28.1318 27.0625 23.9062Z"
+                                fill="black" />
+                        </svg>
+                        <p class="mb-0 text-uppercase text-center text-16">date de alta</p>
+                    </a>
+                    <a class="btn_empleo" href="">
+                        <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_51_430)">
+                                <path
+                                    d="M61.7486 36.7958V20.7098C61.7486 20.2493 61.5359 19.8239 61.235 19.4874L43.2003 0.549277C42.8638 0.195198 42.3852 0 41.9072 0H13.3137C8.03489 0 3.81836 4.30473 3.81836 9.58415V63.6526C3.81836 68.9321 8.03489 73.1661 13.3137 73.1661H35.884C40.153 80.2522 47.913 84.9999 56.7526 84.9999C70.1811 84.9999 81.1472 74.087 81.1472 60.641C81.1653 48.8954 72.7323 39.0811 61.7486 36.7958ZM43.6789 6.21844L55.7786 18.9556H47.9305C45.592 18.9556 43.6789 17.025 43.6789 14.6865V6.21844ZM13.3137 69.6227C10.0011 69.6227 7.36175 66.9652 7.36175 63.6526V9.58415C7.36175 6.25346 10.0011 3.54339 13.3137 3.54339H40.1355V14.6865C40.1355 18.9913 43.6257 22.499 47.9305 22.499H58.2053V36.3347C57.6741 36.3172 57.2487 36.264 56.7883 36.264C50.6055 36.264 44.9188 38.6381 40.6316 42.3586H18.1326C17.158 42.3586 16.361 43.1556 16.361 44.1296C16.361 45.1043 17.158 45.9013 18.1326 45.9013H37.3366C36.0785 47.673 35.0331 49.4447 34.2186 51.3934H18.1326C17.158 51.3934 16.361 52.1904 16.361 53.1651C16.361 54.1392 17.158 54.9368 18.1326 54.9368H33.0669C32.624 56.7085 32.3938 58.6748 32.3938 60.641C32.3938 63.8297 33.0137 66.9833 34.1298 69.6409H13.3137V69.6227ZM56.7708 81.4746C45.2911 81.4746 35.9547 72.1382 35.9547 60.6585C35.9547 49.1788 45.2729 39.8424 56.7708 39.8424C68.268 39.8424 77.5863 49.1788 77.5863 60.6585C77.5863 72.1382 68.2505 81.4746 56.7708 81.4746Z"
+                                    fill="black" />
+                                <path
+                                    d="M18.133 37.026H36.0789C37.0536 37.026 37.8506 36.2283 37.8506 35.2543C37.8506 34.2796 37.0536 33.4826 36.0789 33.4826H18.133C17.1583 33.4826 16.3613 34.2796 16.3613 35.2543C16.3613 36.2283 17.1583 37.026 18.133 37.026Z"
+                                    fill="black" />
+                                <path
+                                    d="M47.6555 61.1372L54.9362 53.289L54.9362 72.6344C54.9362 73.6091 55.7339 74.4061 56.7079 74.4061C57.6826 74.4061 58.4796 73.6091 58.4796 72.6344L58.4796 53.289L65.8141 61.1372C66.4872 61.8453 67.6208 61.8985 68.3296 61.2254C69.0384 60.5522 69.0916 59.4361 68.4178 58.7273L58.0542 47.5842C57.7176 47.2301 57.2572 47.0174 56.7611 47.0174C56.265 47.0174 55.8045 47.2301 55.468 47.5842L45.0862 58.7273C44.413 59.4361 44.4487 60.5697 45.1575 61.2254C45.8838 61.8985 46.9817 61.8453 47.6555 61.1372Z"
+                                    fill="#F03C02" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_51_430">
+                                    <rect width="85" height="85" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p class="mb-0 text-uppercase text-center text-16">envíanos tu oferta</p>
+                    </a>
+                    <a class="btn_empleo" href="/lista-ofertas.html">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_0_1)">
+                                <path
+                                    d="M63.8104 68.5H5.18961C2.61039 68.5 0.5 66.3896 0.5 63.8104V5.18961C0.5 2.61039 2.61039 0.5 5.18961 0.5H63.8104C66.3896 0.5 68.5 2.61039 68.5 5.18961V63.8104C68.5 66.3896 66.3896 68.5 63.8104 68.5Z"
+                                    fill="white" />
+                                <path
+                                    d="M57.9482 12.2241V23.9483H47.3966C46.1069 23.9483 45.0518 25.0035 45.0518 26.2931V33.3276H56.7759V45.0518H45.0518V68.5H33.3276V45.0517H23.9482V33.3275H33.3276V26.293C33.3276 18.9067 38.9551 12.8102 46.2241 12.224L57.9482 12.2241Z"
+                                    fill="#F03C02" />
+                            </g>
+                            <rect x="2" y="2" width="65" height="65" rx="7.5" stroke="black" stroke-width="3" />
+                            <defs>
+                                <clipPath id="clip0_0_1">
+                                    <rect x="0.5" y="0.5" width="68" height="68" rx="9" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p class="mb-0 text-uppercase text-center text-16">Síguenos en facebook</p>
+                    </a>
+                </nav>
+            </aside>
+            <table class="">
+                <thead>
+                    <tr>
+                        <th class="text-uppercase fw-normal text-16">fecha</th>
+                        <th class="text-uppercase fw-normal text-16">puesto</th>
+                        <th class="text-uppercase fw-normal text-16">empresa</th>
+                        <th class="text-uppercase fw-normal text-16">plazas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                    <tr>
+                        <th class="color-terciario text-16 fw-normal">12/12/24</th>
+                        <th class="color-terciario text-16 fw-normal">Docente especializado</th>
+                        <th class="color-terciario text-16 fw-normal">Academia Logos</th>
+                        <th class="color-terciario text-16 fw-normal">6</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
-    <section class="opciones-bolsa-empleo py-5">
-
     </section>
     <section class="inscribete py-5 d-flex justify-content-center background-gris position-relative bloque-standard">
         <section class="row mx-0 mwidth-1440 px-0">

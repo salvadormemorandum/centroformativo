@@ -43,10 +43,10 @@ a.btn-unstyled {
     white-space: nowrap;
     transition: all .2s ease-in-out;
     text-align: center;
-    background-color: #fff;
+    background-color: $color-blanco;
 
     &:hover {
-        color: #fff !important;
+        color: $color-blanco !important;
     }
 }
 
@@ -77,7 +77,7 @@ a.cta {
     border-radius: 20px;
     padding: 1rem 1.5rem;
     gap: 16px;
-    background-color: #fff;
+    background-color: $color-blanco;
 
     & svg {
         width: 40%;
@@ -89,7 +89,7 @@ a.cta {
 .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
+    width: 45px;
     height: 25px;
 }
 
@@ -111,25 +111,25 @@ a.cta {
     background-color: transparent;
     -webkit-transition: .4s;
     transition: .4s;
-    border: 1px solid #6C757D;
+    border: 1px solid $color-texto-terciario;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 16px;
+    height: 17px;
     width: 16px;
     left: 4px;
-    bottom: 4px;
-    background-color: #6C757D;
+    bottom: 3px;
+    background-color: $color-texto-terciario;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(15px);
-    -ms-transform: translateX(15px);
-    transform: translateX(15px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
     background-color: $color-principal;
 }
 
