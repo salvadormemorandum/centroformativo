@@ -26,27 +26,35 @@ a.btn-unstyled {
 /* Extends buttons and links */
 %basicLinkStyle {
     text-decoration: none;
+    font-size: 14px;
 
     &:hover {
         text-decoration: underline;
         text-decoration-thickness: 1px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: unquote("clamp(0.8125rem, 0.3973rem + 0.6696vw, 1rem)");
     }
 }
 
 %basicButtonStyles {
     border-radius: 40px;
     padding: .5rem 1.5rem;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    white-space: nowrap;
     transition: all .2s ease-in-out;
     text-align: center;
     background-color: $color-blanco;
 
     &:hover {
         color: $color-blanco !important;
+    }
+
+    @media (min-width: 992px) {
+        font-size: unquote("clamp(0.8125rem, 0.3973rem + 0.6696vw, 1rem)");
     }
 }
 
@@ -140,4 +148,24 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* Botón menú */
+.menu-btn {
+    & > div {
+        width: 24px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $dark-blue;
+        transition: all .2s ease-in-out;
+    }
+
+    &.active {
+        & > div:first-child {
+            transform: translate(0px,5px) rotate(45deg);
+        }
+        & > div:last-child {
+            transform: translate(0px,-5px) rotate(-45deg);
+        }
+    }
 }

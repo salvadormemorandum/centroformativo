@@ -2,22 +2,38 @@
 section.cabecera {
     min-height: 85vh;
     position: relative;
+    margin-top: 88px;
 
     & .cabecera_info {
         bottom: 0;
         left: 0;
-        width: 45%;
+        width: 90%;
         height: 70%;
         background-color: $color-blanco;
         border-top-right-radius: 40px;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
         max-width: 750px;
         max-height: 400px;
 
         & .subtitulo {
-            font-size: 25px;
+            font-size: unquote("clamp(1.25rem, 0.8929rem + 0.744vw, 1.5625rem)");
             font-weight: 400;
         }
+
+        @media (min-width: 768px) {
+            width: 70%;
+            height: 45%;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        @media (min-width: 992px) {
+            height: 70%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        margin-top: 104.97px;
     }
 }

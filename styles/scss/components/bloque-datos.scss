@@ -1,16 +1,17 @@
 /* Datos */
 section.datos {
-    height: 200px;
+    height: 170px;
 
     & .datos_contenedor {
         border: 1px solid $color-principal;
         border-radius: 40px;
         background-color: $color-blanco;
         box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
-        margin: 0 auto;
-        margin-top: -60px;
+        margin: 0 .5rem;
+        margin-top: -100px;
         z-index: 2;
         position: relative;
+        width: 97%;
 
         & .datos_item {
             width: 33%;
@@ -29,15 +30,41 @@ section.datos {
             &>section {
 
                 & .titulo {
-                    font-size: 35px;
-                    font-weight: 700;
+                    font-size: 20px;
+                    font-weight: 600;
                 }
 
                 & .descripcion {
-                    font-size: 20px;
-                    font-weight: 300;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
             }
         }
+
+        @media (min-width: 768px) {
+            margin: 0 auto;
+            margin-top: -60px;
+            width: 100%;
+
+            & .datos_item {
+
+                &>section {
+
+                    & .titulo {
+                        font-size: 35px;
+                        font-weight: 700;
+                    }
+
+                    & .descripcion {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        height: 200px;
     }
 }

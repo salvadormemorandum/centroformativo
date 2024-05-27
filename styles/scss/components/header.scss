@@ -1,23 +1,38 @@
 /* Header */
 header.header {
-    &>* {
-        padding: 0 2rem;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
 
     & nav.menu-contacto {
         background-color: $dark-blue;
         color: $color-blanco;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+
+        & svg {
+            height: 16px;
+            width: auto;
+        }
 
         & ul.navbar-nav li.nav-item {
 
             &::after {
-                content: "|";
+                content: "";
+
+                @media (min-width: 992px) {
+                    content: "|";
+                }
             }
 
             &:last-of-type::after {
                 content: unset;
+            }
+        }
+
+        @media (min-width: 992px) {
+            & svg {
+                height: unset;
             }
         }
     }
@@ -29,6 +44,53 @@ header.header {
             & a.nav-link {
                 color: $color-principal !important;
             }
+        }
+
+        & a.nav-link {
+            font-size: 15px;
+
+            @media (min-width: 992px) {
+                font-size: unquote("clamp(0.8125rem, 0.3973rem + 0.6696vw, 1rem)");
+            }
+        }
+
+        & .menu-principal_dinamico {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            transform: translateX(100%);
+            transition: all .5s ease-in-out;
+            z-index: 2;
+            padding: 2.5rem;
+            box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.11);
+
+            &.active {
+                transform: translateX(0 - 16px);
+            }
+
+            @media (min-width: 768px) {
+                width: 50vw;
+                transform: translateX(200%);
+
+                &.active {
+                    transform: translateX(calc(100% - 16px));
+                }
+            }
+
+            @media (min-width: 992px) {
+                position: relative;
+                width: unset;
+                transform: unset;
+                z-index: unset;
+                padding: unset;
+                box-shadow: unset;
+
+                &.active {
+                    transform: unset;
+                }
+            }
+
+            
         }
     }
 }

@@ -1,14 +1,18 @@
 /* Layout */
 .mwidth-1440 {
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1440px; }
+  max-width: 1440px;
+  padding-inline: 1rem; }
 
 .mwidth-500 {
   max-width: 500px; }
 
 .mheight-400 {
   max-height: 400px; }
+
+.w-fit {
+  width: fit-content; }
 
 .w-35 {
   width: 35%; }
