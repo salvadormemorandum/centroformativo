@@ -19,12 +19,22 @@
             width: 3px;
             min-height: 100px;
             background-color: $color-gris;
-            margin-inline: 2rem;
+            margin-inline: .5rem;
+
+            @media (min-width: 768px) {
+                margin-inline: 2rem;
+            }
         }
 
         & a {
-            width: 250px;
+            width: 30%;
             aspect-ratio: 1/1;
+            max-width: 200px;
+            padding: .5rem;
+
+            @media (min-width: 992px) {
+                padding: 1rem 1.5rem;
+            }
         }
     }
 }

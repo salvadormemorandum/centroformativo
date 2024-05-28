@@ -1,13 +1,13 @@
 .ul-list {
-    margin-left: 1rem;
+    margin-left: .25rem;
 
     & li {
         &::marker {
             color: $color-principal;
         }
+    }
 
-        &.m-b-5 {
-            margin-bottom: 2.5rem !important;
-        }
+    @media (min-width: 992px) {
+        margin-left: 1rem;
     }
 }

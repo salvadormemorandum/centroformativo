@@ -45,6 +45,9 @@ body {
 .height-unset {
   height: unset !important; }
 
+.min-h-unset {
+  min-height: unset !important; }
+
 .h-80 {
   height: 80%; }
 
@@ -248,7 +251,7 @@ input:checked + .slider:before {
   font-weight: 400; }
 
 .text-16 {
-  font-size: 16px;
+  font-size: clamp(0.8125rem, 0.1696rem + 1.3393vw, 1rem);
   font-weight: 500; }
 
 .text-13 {
@@ -269,11 +272,12 @@ div.indicador {
     height: 60px; }
 
 .ul-list {
-  margin-left: 1rem; }
+  margin-left: .25rem; }
   .ul-list li::marker {
     color: #F03C02; }
-  .ul-list li.m-b-5 {
-    margin-bottom: 2.5rem !important; }
+  @media (min-width: 992px) {
+    .ul-list {
+      margin-left: 1rem; } }
 
 /* Header */
 header.header {
@@ -549,10 +553,18 @@ ul.listado-cursos > li {
     width: 3px;
     min-height: 100px;
     background-color: #F6F6F6;
-    margin-inline: 2rem; }
+    margin-inline: .5rem; }
+    @media (min-width: 768px) {
+      .opciones-bolsa-empleo nav .line-divider {
+        margin-inline: 2rem; } }
   .opciones-bolsa-empleo nav a {
-    width: 250px;
-    aspect-ratio: 1/1; }
+    width: 30%;
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    padding: .5rem; }
+    @media (min-width: 992px) {
+      .opciones-bolsa-empleo nav a {
+        padding: 1rem 1.5rem; } }
 
 .formulario-con-aside aside {
   width: 30%; }

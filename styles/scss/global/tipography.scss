@@ -19,7 +19,7 @@
 }
 
 .text-16 {
-    font-size: 16px;
+    font-size: unquote("clamp(0.8125rem, 0.1696rem + 1.3393vw, 1rem)");
     font-weight: 500;
 }
 

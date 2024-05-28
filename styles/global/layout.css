@@ -32,6 +32,9 @@
 .height-unset {
   height: unset !important; }
 
+.min-h-unset {
+  min-height: unset !important; }
+
 .h-80 {
   height: 80%; }
 
