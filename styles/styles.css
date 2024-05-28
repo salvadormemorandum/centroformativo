@@ -27,6 +27,12 @@ body {
 .w-fit {
   width: fit-content; }
 
+.w-100-md-unset {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .w-100-md-unset {
+      width: unset !important; } }
+
 .w-35 {
   width: 35%; }
 
@@ -35,6 +41,9 @@ body {
 
 .w-60 {
   width: 60%; }
+
+.height-unset {
+  height: unset !important; }
 
 .h-80 {
   height: 80%; }
@@ -134,6 +143,14 @@ a.cta {
   .btn_categorias:hover,
   .btn-secundario:hover {
     background-color: #0A1D35; }
+
+.btn_categorias {
+  font-size: 12px;
+  padding: .25rem .75rem; }
+  @media (min-width: 992px) {
+    .btn_categorias {
+      font-size: clamp(0.8125rem, 0.3973rem + 0.6696vw, 1rem);
+      padding: .5rem 1.5rem; } }
 
 .btn_empleo {
   color: #263238;
@@ -401,17 +418,36 @@ section.datos {
   .bloque-standard p.text-20 {
     max-width: 750px; }
   .bloque-standard .bloque-standard_img-right,
+  .bloque-standard .bloque-standard_img-left {
+    position: relative;
+    width: 90%; }
+    .bloque-standard .bloque-standard_img-right .img-back,
+    .bloque-standard .bloque-standard_img-left .img-back {
+      display: none; }
+    @media (min-width: 768px) {
+      .bloque-standard .bloque-standard_img-right,
+      .bloque-standard .bloque-standard_img-left {
+        position: absolute;
+        width: 35%; }
+        .bloque-standard .bloque-standard_img-right .img-back,
+        .bloque-standard .bloque-standard_img-left .img-back {
+          display: block; } }
+  .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-left,
   .bloque-standard .img-back {
     top: 0; }
   .bloque-standard .img-front {
-    transform: translateY(12%); }
+    transform: translateY(0%); }
     .bloque-standard .img-front.full-height {
       transform: translateY(0);
       height: 100%; }
+    @media (min-width: 768px) {
+      .bloque-standard .img-front {
+        transform: translateY(12%); } }
   .bloque-standard .bloque-standard_img-right,
   .bloque-standard .bloque-standard_img-right .img-back {
-    right: 0; }
+    right: 0;
+    margin: 0 0 0 auto; }
   .bloque-standard .bloque-standard_img-right .img-front {
     border-top-left-radius: 64px; }
   .bloque-standard .bloque-standard_img-right .img-back {
@@ -420,7 +456,8 @@ section.datos {
     opacity: 0.1; }
   .bloque-standard .bloque-standard_img-left,
   .bloque-standard .bloque-standard_img-left .img-back {
-    left: 0; }
+    left: 0;
+    margin: 0 auto 0 0; }
   .bloque-standard .bloque-standard_img-left .img-front {
     border-top-right-radius: 64px; }
   .bloque-standard .bloque-standard_img-left .img-back {
@@ -440,13 +477,15 @@ section.datos {
 
 /* Bloque listado cursos */
 ul.listado-cursos > li {
-  width: 32%; }
+  width: 100%;
+  min-width: 330px;
+  max-width: 400px; }
   ul.listado-cursos > li article.curso-card {
     border-radius: 16px 16px 16px 0;
     width: 100%;
     height: 290px;
     position: relative;
-    box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.11);
     background-color: rgba(0, 0, 0, 0.5); }
     ul.listado-cursos > li article.curso-card img.curso-card_bg {
       border-radius: 16px 16px 16px 0; }
@@ -473,11 +512,16 @@ ul.listado-cursos > li {
       ul.listado-cursos > li article.curso-card .curso-card_info .curso-card_info_nombre {
         font-size: 16px;
         font-weight: 700; }
+  @media (min-width: 992px) {
+    ul.listado-cursos > li {
+      width: 32%;
+      min-width: unset;
+      max-width: unset; } }
 
 /* Contacto */
 .contacto .mapa {
   height: 440px;
-  box-shadow: 0px 4px 51px 0px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); }
   .contacto .mapa .mapa_info {
     width: 90%;
     height: 65%;
@@ -486,10 +530,11 @@ ul.listado-cursos > li {
     background-color: rgba(10, 29, 53, 0.8);
     border-radius: 64px 0 0 0;
     color: #FFFFFF;
-    padding: 50px 60px; }
+    padding: 20px 30px; }
     @media (min-width: 768px) {
       .contacto .mapa .mapa_info {
-        width: 45%; } }
+        width: 45%;
+        padding: 50px 60px; } }
 
 .opciones-bolsa-empleo.horizontal nav {
   flex-direction: row; }

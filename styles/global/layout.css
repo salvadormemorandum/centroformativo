@@ -14,6 +14,12 @@
 .w-fit {
   width: fit-content; }
 
+.w-100-md-unset {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .w-100-md-unset {
+      width: unset !important; } }
+
 .w-35 {
   width: 35%; }
 
@@ -22,6 +28,9 @@
 
 .w-60 {
   width: 60%; }
+
+.height-unset {
+  height: unset !important; }
 
 .h-80 {
   height: 80%; }

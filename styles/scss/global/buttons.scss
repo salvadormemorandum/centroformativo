@@ -73,6 +73,16 @@ a.cta {
     @include buttonColor($color: $color-texto);
 }
 
+.btn_categorias {
+    font-size: 12px;
+    padding: .25rem .75rem;
+
+    @media (min-width: 992px) {
+        font-size: unquote("clamp(0.8125rem, 0.3973rem + 0.6696vw, 1rem)");
+        padding: .5rem 1.5rem;
+    }
+}
+
 .btn_empleo {
     @extend %basicLinkStyle;
     @include colorEnlace($color: $color-texto-secundario);
