@@ -1,10 +1,14 @@
 .tabla-con-aside {
     & aside {
-        width: 30%;
+        width: 100%;
+
+        @media (min-width: 992px) {
+            width: 30%;
+        }
     }
 
     & table {
-        width: 70%;
+        width: 100%;
 
         th {
             text-align: center;
@@ -35,6 +39,10 @@
                 background-color: $color-blanco;
                 padding: 5px 10px;
             }
+        }
+
+        @media (min-width: 992px) {
+            width: 70%;
         }
     }
 }

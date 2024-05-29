@@ -39,14 +39,56 @@ body {
 .w-40 {
   width: 40%; }
 
+.w-50-40 {
+  width: 50%; }
+  @media (min-width: 992px) {
+    .w-50-40 {
+      width: 40%; } }
+
+.w-100-md-40 {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .w-100-md-40 {
+      width: 40%; } }
+
+.w-100-md-50 {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .w-100-md-50 {
+      width: 50%; } }
+
 .w-60 {
   width: 60%; }
+
+.w-50-60 {
+  width: 50%; }
+  @media (min-width: 992px) {
+    .w-50-60 {
+      width: 60%; } }
+
+.w-100-md-60 {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .w-100-md-60 {
+      width: 60%; } }
+
+.w-100-75 {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .w-100-75 {
+      width: 75%; } }
 
 .height-unset {
   height: unset !important; }
 
 .min-h-unset {
   min-height: unset !important; }
+
+.min-h-unset-lg-400 {
+  min-height: unset !important; }
+  @media (min-width: 992px) {
+    .min-h-unset-lg-400 {
+      min-height: 400px !important; } }
 
 .h-80 {
   height: 80%; }
@@ -542,9 +584,17 @@ ul.listado-cursos > li {
 
 .opciones-bolsa-empleo.horizontal nav {
   flex-direction: row; }
+  .opciones-bolsa-empleo.horizontal nav a {
+    width: 30%; }
 
 .opciones-bolsa-empleo.vertical nav {
-  flex-direction: column; }
+  flex-direction: row; }
+  @media (min-width: 992px) {
+    .opciones-bolsa-empleo.vertical nav {
+      flex-direction: column; } }
+
+.opciones-bolsa-empleo.vertical a {
+  width: 250px; }
 
 .opciones-bolsa-empleo nav {
   justify-content: center;
@@ -558,7 +608,6 @@ ul.listado-cursos > li {
       .opciones-bolsa-empleo nav .line-divider {
         margin-inline: 2rem; } }
   .opciones-bolsa-empleo nav a {
-    width: 30%;
     aspect-ratio: 1/1;
     max-width: 200px;
     padding: .5rem; }
@@ -567,13 +616,16 @@ ul.listado-cursos > li {
         padding: 1rem 1.5rem; } }
 
 .formulario-con-aside aside {
-  width: 30%; }
+  width: 100%; }
+  @media (min-width: 992px) {
+    .formulario-con-aside aside {
+      width: 30%; } }
 
 .formulario-con-aside form {
-  width: 70%; }
+  width: 100%; }
   .formulario-con-aside form .input-field .form-label {
     color: #6c757d;
-    margin-bottom: .25rem; }
+    margin-bottom: 0; }
   .formulario-con-aside form .input-field .form-control {
     border-color: #263238;
     color: #263238; }
@@ -590,9 +642,6 @@ ul.listado-cursos > li {
         background-color: #D9D9D9;
         padding: 10px 50px;
         color: inherit; }
-  .formulario-con-aside form .input-field fieldset {
-    height: 38px;
-    align-items: center; }
   .formulario-con-aside form .conformidad {
     color: #6c757d; }
     .formulario-con-aside form .conformidad .scroll {
@@ -606,12 +655,18 @@ ul.listado-cursos > li {
     .formulario-con-aside form .btn-borrar:hover {
       background-color: #263238;
       color: #FFFFFF !important; }
+  @media (min-width: 992px) {
+    .formulario-con-aside form {
+      width: 70%; } }
 
 .tabla-con-aside aside {
-  width: 30%; }
+  width: 100%; }
+  @media (min-width: 992px) {
+    .tabla-con-aside aside {
+      width: 30%; } }
 
 .tabla-con-aside table {
-  width: 70%; }
+  width: 100%; }
   .tabla-con-aside table th {
     text-align: center;
     border: 1px solid #263238; }
@@ -627,6 +682,9 @@ ul.listado-cursos > li {
   .tabla-con-aside table tbody th {
     background-color: #FFFFFF;
     padding: 5px 10px; }
+  @media (min-width: 992px) {
+    .tabla-con-aside table {
+      width: 70%; } }
 
 /* Footer */
 footer.footer .footer_top {

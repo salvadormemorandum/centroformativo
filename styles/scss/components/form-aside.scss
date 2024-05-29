@@ -1,15 +1,19 @@
 .formulario-con-aside {
     & aside {
-        width: 30%;
+        width: 100%;
+
+        @media (min-width: 992px) {
+            width: 30%;
+        }
     }
 
     & form {
-        width: 70%;
+        width: 100%;
 
         & .input-field {
             & .form-label {
                 color: $color-texto-terciario;
-                margin-bottom: .25rem;
+                margin-bottom: 0;
             }
 
             & .form-control {
@@ -35,11 +39,6 @@
                     }
                 }
             }
-
-            & fieldset {
-                height: 38px;
-                align-items: center;
-            }
         }
 
         & .conformidad {
@@ -61,6 +60,10 @@
                 background-color: $color-texto-secundario;
                 color: $color-blanco !important;
             }
+        }
+
+        @media (min-width: 992px) {
+            width: 70%;
         }
     }
 }

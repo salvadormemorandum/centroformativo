@@ -2,12 +2,24 @@
     &.horizontal {
         & nav {
             flex-direction: row;
+
+            & a {
+                width: 30%;
+            }
         }
     }
 
     &.vertical {
         & nav {
-            flex-direction: column;
+            flex-direction: row;
+
+            @media (min-width: 992px) {
+                flex-direction: column;
+            }
+        }
+
+        & a {
+            width: 250px;
         }
     }
 
@@ -27,7 +39,6 @@
         }
 
         & a {
-            width: 30%;
             aspect-ratio: 1/1;
             max-width: 200px;
             padding: .5rem;
